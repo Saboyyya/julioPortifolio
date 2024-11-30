@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  --color-black: #1f2623;
+  --color-white: #fefcfd;
+  --color-purple: #8a2be2;
+  --color-grey: #969088;
+
+  --font-title-desktop: 3rem;
+  --font-span-desktop: 1.5rem;
+  --font-text-desktop: 1.2rem;
+
+  --font-title-mobile: 2rem;
+  --font-span-mobile: 1.2rem;
+  --font-text-mobile: 1rem;
+}
+body {
+  background-color: var(--color-grey);
+
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+}
+.redes {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.redes a {
+  color: var(--color-white);
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.redes a:hover {
+  color: var(--color-black);
+}
+
+.nome_profissao {
+  display: grid;
+  place-items: center;
+}
+.cima {
+  display: grid;
+  gap: 1px;
+  background-color: var(--color-black);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-bottom: 400px;
+}
+.navbar {
+  background-color: var(--color-black);
+}
+.nome_profissao h1 {
+  font-size: 5rem;
+  color: var(--color-white);
+  text-shadow: 0px 0px 3px #000000 ease;
+}
+
+.nome {
+  display: grid;
+  place-items: center;
+  padding-bottom: 1px;
+}
+.nome h2 {
+  color: var(--color-white);
+  font-size: 2rem;
+  font-family: monospace;
+  border-right: 4px solid;
+  white-space: nowrap;
+  width: 18ch;
+  overflow:hidden;
+  animation: animaM 0.5s linear ;
+  animation: animaT steps(18) 2s;
+}
+@keyframes animaM{
+  50%{
+    border-right:transparent
+  }
+}
+@keyframes animaT{
+  0%{
+     width: 0;
+  }
+}
+
+#CopiarEmail {
+  font-size: 1rem;
+  padding: 12px 24px;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-black);
+  border-radius: 25px; 
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#CopiarEmail:hover {
+  background-color: var(--color-black);
+  border: 2px solid var(--color-white);
+  transform: scale(1.05);
+  color: var(--color-white);
+}
+
+#CopiarEmail:active {
+  transform: scale(0.95); 
+}
+.botoes {
+  display: grid;
+  place-items: center;
+}
+.imagens {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+}
+.imagem1 img {
+  width: 600px;
+  height: 600px;
+  border-radius: 10px;
+}
+.imagem2 img {
+  width: 600px;
+  height: 600px;
+  border-radius: 10px;
+}
+.imagem3 img {
+  width: 600px;
+  height: 600px;
+  border-radius: 10px;
+}
+.informacoes {
+  display: flex;
+  background-color: var(--color-grey);
+  justify-content: space-around;
+}
+.competencias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 20px;
+}
+.competencias h2 {
+  text-align: center;
+  font-size: 6rem;
+  color: var(--color-black);
+}
+.card {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
+  align-items: center;
+  border: 2px solid var(--color-black);
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.card i {
+  font-size: 3rem;
+  color: var(--color-black);
+}
+.card p {
+  margin: 0;
+  padding: 0 20px; 
+}
+
+.html {
+  display: flex;
+  flex-direction: column;
+}
+.icones {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.js {
+  display: flex;
+  flex-direction: column;
+}
+.java {
+  display: flex;
+  flex-direction: column;
+}
+.python {
+  display: flex;
+  flex-direction: column;
+}
+.imagemPerfil img {
+  width: 300px;
+  height: 300px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+
+.textoProjetos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  margin-right: 20rem;
+  gap: 2rem;
+}
+.textoProjetos p {
+  font-size: var(--font-text-desktop);
+  text-align: center;
+  margin: 0;
+  margin-left: 1rem;
+}
+.projetos{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-left: 8rem;
+  margin-top: 2rem;
+}
+
+.botao2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+#gitHub {
+  font-size: 1rem;
+  width: 200px;
+  height: 80;
+  padding: 12px 24px;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border: 2px solid var(--color-grey);
+  border-radius: 25px; 
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#gitHub:hover {
+  background-color: var(--color-white);
+  border: 2px solid var(--color-grey);
+  transform: scale(1.05);
+  color: var(--color-black);
+}
+
+#gitHub:active {
+  transform: scale(0.95); 
+}
+.TituloP {
+  display: flex;
+  justify-content: center; 
+  width: 100%; 
+}
+.TituloP h2 {
+  text-align: caenter;
+  font-size: 6rem;
+  color: var(--color-black);
+}
+
+.final {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;   
+  justify-content: center; 
+  height: 100vh; 
+  background-color: var(--color-grey); 
+  gap: 2rem; 
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: var(--font-text-mobile);
+    padding: 0 10px;
+  }
+
+  .cima {
+    padding-bottom: 200px;
+  }
+
+  .nome_profissao h1 {
+    font-size: 3rem;
+  }
+
+  .competencias h2 {
+    font-size: 4rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .projetos {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .imagemPerfil img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .textoProjetos {
+    margin-right: 0;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .cima {
+    padding-bottom: 300px;
+  }
+
+  .nome_profissao h1 {
+    font-size: 4rem;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  .imagemPerfil img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .textoProjetos {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .competencias h2 {
+    font-size: 6rem;
+  }
+
+  .cards {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .projetos {
+    flex-direction: row;
+  }
+
+  .imagemPerfil img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .textoProjetos {
+     margin-right: 20rem;
+  }
+}
+
